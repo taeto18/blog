@@ -11,17 +11,17 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-//
-// Route::get('to', function () {
-//     return view('to');
-// });
-//
-// Route::get('new' ,function () {
-//   return "Hello Tayakorn";
-// });
+ Route::get('/', function () {
+     return view('welcome');
+ });
+
+ Route::get('to', function () {
+     return view('to');
+ });
+
+ Route::get('new' ,function () {
+   return "Hello Tayakorn";
+ });
 //
 // //Route::view('/','new');
 // Route::get('new/{id}',function($id){
@@ -40,6 +40,6 @@
 //   return view('taeto',['name'=>$name]);
 // });
 
-Route::get('/',function(){
-  return view('block,block');
-});
+//Route::get('/',function(){
+//  return view('block,block');
+//});
