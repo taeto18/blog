@@ -1,10 +1,9 @@
 <?php
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class lineController extends Controller
+class LineController extends Controller
 {
     public function webhook(Request $request)
     {

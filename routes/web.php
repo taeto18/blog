@@ -20,7 +20,7 @@
  });
 
 
- Route::post('new', 'lineController@webhook');
+ Route::post('new', 'LineController@webhook');
 //
 // //Route::view('/','new');
 // Route::get('new/{id}',function($id){
