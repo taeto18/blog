@@ -12,9 +12,9 @@ class LineApiController extends Controller
         $replyToken = $request['events'][0]['replyToken'] ?? '';
         $message = $request['events']['message']['text'] ?? 'Hello';
 
-//        if ($type == 'message') {
-//            $this->replyfunction($replyToken, $message);
-//        }
+        if ($type == 'message') {
+            $this->replyfunction($replyToken, $message);
+        }
 
         return response()->json(['success'], 200);
     }
