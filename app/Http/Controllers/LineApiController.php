@@ -3,7 +3,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class LineController extends Controller
+class LineApiController extends Controller
 {
     public function webhook(Request $request)
     {
