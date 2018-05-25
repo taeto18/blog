@@ -19,7 +19,7 @@
      return view('to');
  });
 
- 
+
  Route::post('new', 'lineController@webhook');
 //
 // //Route::view('/','new');
