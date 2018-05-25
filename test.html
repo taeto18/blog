@@ -1,0 +1,36 @@
+
+<!--//Setting-->
+$httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient('<channel access token>');
+    $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => '<channel secret>']);
+
+
+        <!--Reply Massage-->
+        $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('hello');
+        $response = $bot->replyMessage('<replyToken>', $textMessageBuilder);
+
+            echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
+
+
+            <!--Node-->
+            <!--//Setting-->
+
+            const line = require('@line/bot-sdk');
+
+            const client = new line.Client({
+            channelAccessToken: '<channel access token>'
+                });
+
+                const message = {
+                type: 'text',
+                text: 'Hello World!'
+                };
+
+                <!--Reply Massage-->
+
+                client.replyMessage('<replyToken>', message)
+                    .then(() => {
+                    ...
+                    })
+                    .catch((err) => {
+                    // error handling
+                    });
