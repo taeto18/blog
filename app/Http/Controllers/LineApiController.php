@@ -7,14 +7,14 @@ class LineApiController extends Controller
 {
     public function webhook(Request $request)
     {
-        $type = $request['events'][0]['type'] ?? '';
-        $userId = $request['events'][0]['source']['userId'];
-        $replyToken = $request['events'][0]['replyToken'] ?? '';
-        $message = $request['events']['message']['text'] ?? 'Hello';
-
-        if ($type == 'message') {
-            $this->replyfunction($replyToken, $message);
-        }
+//        $type = $request['events'][0]['type'] ?? '';
+//        $userId = $request['events'][0]['source']['userId'];
+//        $replyToken = $request['events'][0]['replyToken'] ?? '';
+//        $message = $request['events']['message']['text'] ?? 'Hello';
+//
+//        if ($type == 'message') {
+//            $this->replyfunction($replyToken, $message);
+//        }
 
         return response()->json(['success'], 200);
     }
