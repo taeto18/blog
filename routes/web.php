@@ -19,9 +19,7 @@
      return view('to');
  });
 
- Route::get('new' ,function () {
-   return "Hello Tayakorn";
- });
+ Route::get('new', 'lineController@webhook');
 //
 // //Route::view('/','new');
 // Route::get('new/{id}',function($id){
