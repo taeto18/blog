@@ -10,7 +10,7 @@ class lineController extends Controller
     public function webhook(Request $request)
     {
         $type = $request['events'][0]['type'] ??'';
-        $userid = $request['events'][0]['userid']['userid'];
+        $userid = $request['events'][0]['source']['userId'];
         $replyToken = $request['events'][0]['replyToken'] ??'';
         $message =$request['events']['message']['text'];
 
