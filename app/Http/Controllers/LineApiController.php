@@ -16,7 +16,7 @@ class LineApiController extends Controller
             $this->replyfunction($replyToken, $message);
         }
 
-        return 'to';
+        return response()->json(['success'], 200);
     }
 
     public function replyfunction($replyToken, $message)
