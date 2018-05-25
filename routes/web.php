@@ -19,7 +19,8 @@
      return view('to');
  });
 
- Route::get('new', 'lineController@webhook');
+ 
+ Route::post('new', 'lineController@webhook');
 //
 // //Route::view('/','new');
 // Route::get('new/{id}',function($id){
