@@ -1,0 +1,87 @@
+//@import url('https://fonts.googleapis.com/css?family=Kanit:400,500');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+// $nav-background: #2b2b2b !important;
+// $nav-color: #bcbcbc !important;
+// $nav-active-color: #ffd400 !important;
+// $body-background: #111111;
+// $body-color: #e8e8e8;
+$primary-color: #f45600;
+$second-color: #F8B133;
+$third-color: #dd101b;
+
+$theme-colors: (
+  "primary": $primary-color
+);
+
+$gs-0: #111111;
+$gs-1: #2B2B2B;
+$gs-2: #BCBCBC;
+$gs-3: #E8E8E8;
+$white: #FFF;
+$almost-white: #C8C8C8;
+
+
+$serif-font-family: 'Varela Round' !important;
+$sans-serif-font-family: !important;
+$headings-font-weight: bold;
+$font-family-sans-serif: $sans-serif-font-family;
+$font-family-base: $font-family-sans-serif;
+
+
+// Typography
+$line-height-ratio: 1.8;
+
+// Forms
+// $input-padding-y: .45rem;
+// $input-btn-padding-y: .65rem;
+// $input-bg: $gs-1;
+// $input-border-color: lighten($gs-1, 15%);
+// $input-color: white;
+// $input-line-height: 1rem;
+
+// Transition Curves
+$ease-in-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+$ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1);
+
+// Custom mixins
+@mixin font-weight($weight) {
+  $normalized-weights: (
+    regular: 400,
+    bold: 700,
+    heavy: 900
+  );
+
+  $output: $weight;
+  @if map-has-key($normalized-weights, $weight) {
+    $output: map-get($normalized-weights, $weight);
+  }
+
+  font-weight: $output;
+}
+
+@mixin font-family($type) {
+  $types: (
+    serif: $serif-font-family,
+    sans-serif: $sans-serif-font-family
+  );
+
+  $output: $serif-font-family;
+  @if map-has-key($types, $type) {
+    $output: map-get($types, $type);
+  }
+
+  font-family: $output;
+}
+
+@mixin line-height($font-size) {
+  line-height: $font-size * $line-height-ratio;
+}
+
+@mixin font-size($font-size) {
+  font-size: $font-size;
+  line-height: $font-size * $line-height-ratio;
+}
+
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';

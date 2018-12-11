@@ -12,4 +12,17 @@ let mix = require('laravel-mix');
  */
 
 mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+   .sass('resources/assets/scss/style.scss', 'public/css')
+   .sass('resources/assets/scss/styles.scss', 'public/css')
+   // .sass('resources/assets/scss/bootstrap.scss', 'public/css')
+   // .sass('resources/assets/scss/datepicker3.scss', 'public/css')
+   // .sass('resources/assets/scss/datepicker.scss', 'public/css')
+   // .sass('resources/assets/scss/bootstrap-table.scss', 'public/css')
+   .sass('resources/assets/scss/bootstrap-theme.scss', 'public/css')
+   .options({
+      processCssUrls: false
+  });
+
+if (!mix.inProduction()) {
+   mix.sourceMaps();
+}
