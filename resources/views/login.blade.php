@@ -30,7 +30,7 @@
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-12">
             <div class="center">
                 <div class="login-panel panel panel-default">
-                    <div class="panel-heading">Report System</div>
+                    <div class="panel-heading">Accident Reports </div>
                     <div class="panel-body">
                         <form>
                             <fieldset>
